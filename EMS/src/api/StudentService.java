@@ -110,7 +110,7 @@ public class StudentService {
  
     public static boolean submitFeedback(int studentId, int eventId, int rating, String comment) {
         try {
-            URL url = new URL(BASE_URL + "submitFeedback.php");
+            URL url = new URL(BASE_URL + "submitFeedbacks.php");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("POST");
             conn.setDoOutput(true);
